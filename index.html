@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>My Family Book!</title>
+    </head>
+
+    <body>
+        <h1>My Family Book!</h1>
+        <img id="Img" src="https://st2.depositphotos.com/5425740/11033/v/600/depositphotos_110337550-stock-illustration-family-portrait-at-simple-style.jpg">
+        <h3 id="names">My Family Book!</h3>
+        <br>
+        <br>
+        <div>
+            <button type="button" onclick="Next()">Next!</button>
+        </div>
+        
+      
+    </body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+       
+        body{
+            text-align: center;
+        }
+        h1{
+            font-family: 'Boogaloo', cursive;
+            color: deeppink;
+        }
+
+        h3{
+            font-family: 'Cookie', cursive;
+            color: black;
+            font-size: 30px;
+            
+        }
+
+        img{
+            width: 400px;
+        }
+       
+
+    </style>
+
+<script>
+    var Imgs=[
+    "https://st2.depositphotos.com/5425740/11033/v/600/depositphotos_110337550-stock-illustration-family-portrait-at-simple-style.jpg",
+    "https://www.pngkit.com/png/detail/19-190572_cartoon-mom-png-mother-cartoon-transparent.png", 
+    "https://i.pinimg.com/736x/0b/37/5f/0b375fb169569a6100a18ecb7d584d0c.jpg",
+    "https://img.freepik.com/free-vector/girl-shy-character_1450-155.jpg?size=338&ext=jpg&ga=GA1.2.1412099611.1623110400",
+    "https://thumbs.dreamstime.com/b/grandma-cartoon-character-happy-grandparents-day-holding-ball-wool-march-old-cute-woman-vector-illustration-200099340.jpg",
+    "https://t3.ftcdn.net/jpg/02/62/72/10/360_F_262721052_Vu8A61M6FpOHP5LgPFHJDlvwwF5ynvc9.jpg",
+    "https://t4.ftcdn.net/jpg/01/96/34/23/360_F_196342368_jPUkJzyByM64dOP3IZmxzFsmAv4LcFYC.jpg",
+    "https://st3.depositphotos.com/2400497/13166/v/450/depositphotos_131660376-stock-illustration-baby-cartoon-character.jpg",
+    "https://png.pngtree.com/png-vector/20190119/ourlarge/pngtree-the-man-cartoon-cartoon-man-green-png-image_476612.jpg"
+];
+
+var Names=[
+    "My Family Book!",
+    "Mom- Sowmya",
+    "Dad- Prashanth",
+    "Me- Amritha",
+    "Grandma- Shashikala",
+    "Grandpa- Somappa",
+    "Aunt- Supriya",
+    "Baby Cousin- Vihaan",
+    "Uncle- Abhilash"
+
+];
+var i=0;
+function Next(){
+
+    document.getElementById("Img").src=Imgs[i];
+    document.getElementById("names").innerHTML=Names[i];
+     i++;
+
+     if(i>8){
+         i=0;
+     }
+}
+</script>
+   
+</html>
